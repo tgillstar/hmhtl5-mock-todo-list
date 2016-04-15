@@ -114,12 +114,10 @@ section{
 }
 .main-todo-title {
   margin: 0 0 20px 0;
-
   div {
     margin-left: 20px;
   }
 }
-
 .add {
   color: $highlight-color;
 }
@@ -151,20 +149,25 @@ a:hover {
     height: 100%;
   z-index: 10;
 }
+
+/****** Bootstrap modal ******/
+
 .modal-content{
   z-index: 999999;
   * {
     border-radius: 0 !important;
     -moz-border-radius: 0 !important;
   }
-}
-select:not([multiple]) {
-  padding: .5em;
-  padding-right: 1.5em
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important;
+  @border-radius-base: 0px;
+  @border-radius-large:  0px;
+  @border-radius-small: 0px;
 }
 select{
-  border: 0 !important;
-  border-radius:0;
+  border: 0px !important;
+  border-radius: 0px !important;
   outline: 1px solid #CCC;
   background-color: white;
   box-shadow: none;

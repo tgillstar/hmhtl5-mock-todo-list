@@ -1,4 +1,4 @@
-HTML5 Mock ToDo List using SASS and Bootstrap
+HTML5 Mock ToDo List using SASS
 ===========
 
 The design is a single screen for a todo list with tasks grouped by month in the tray that makes up the sidebar. There is also a modal that appears when clicking on the name of a todo that can be closed by either clicking an action or clicking on the translucent layer between it and the page. Keep the following requirements in mind regarding implementation:

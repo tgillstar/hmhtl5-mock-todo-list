@@ -1,18 +1,16 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Mock ToDo List</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" name="viewport" content="width=device-width, initial-scale=1">
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <section id="sidr">
-    <div id="sidebar-menu">
+    <article id="sidebar-menu">
             <div class="sidebar-menu-title"><p class="icon" id="calendar">All Todos<span class="circle2">18</span></p></div>
             <ul>
                 <li id="selected" class="todo-dates">02/16<span class="circle2 selected">8</span></li>
@@ -30,12 +28,12 @@
                 <li class="todos-dates-completed">05/15</li>
                 <li class="todos-dates-completed">06/14</li>
             </ul>
-    </div>
+    </article>
 </section>
 <section class="main">
-   <div class="hamburger"> <a id="hamburger-menu" href="#sidr"><img src="images/menu.gif"></a></div>
-    <div id="main-area">
-        <div class="main-todo-title">02/16<span class="circle2 selected">8</span></div>
+   <aside class="hamburger"> <a id="hamburger-menu" href="#sidr"><img src="images/menu.gif"></a></aside>
+    <article id="main-area">
+        <header class="main-todo-title">02/16<span class="circle2 selected">8</span></header>
         <div class="todos-items add"><p class="icon" id="plus">Add new to do</p></div>
         <ul>
             <li class="todos-items" ><input id="item1" type="checkbox" data-toggle="modal" data-target="#item-modal" /><label for="item1"> </label><a data-toggle="modal" data-target="#item-modal">Item 1</a><a class="trash" href="#"></a></li>
@@ -48,7 +46,7 @@
             <li class="todos-items"><input id="item8" type="checkbox" data-toggle="modal" data-target="#item-modal"/><label for="item8"> </label><a data-toggle="modal" data-target="#item-modal">Item 8</a><a class="trash" href="#"></a></li>
             <li class="todos-items"><input id="item9" type="checkbox" data-toggle="modal" data-target="#item-modal"/><label for="item9"> </label><a data-toggle="modal" data-target="#item-modal">Item 9</a><a class="trash" href="#"></a></li>
         </ul>
-    </div>
+    </article>
 </section>
 <!-- Modal -->
 <div class="modal" id="item-modal" role="dialog">
@@ -130,4 +128,11 @@
         }
     }
 </script>
+<!--[if lt IE 9]>
+<script type="text/javascript">
+    document.createElement("header");
+    document.createElement("section");
+    document.createElement("article");
+</script>
+<![endif]-->
 </html>
